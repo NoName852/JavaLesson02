@@ -1,6 +1,6 @@
-/*
-Вычислить средний рост мальчиков и девочек в одном классе.
-В классе учится N человек
+п»ї/*
+Р’С‹С‡РёСЃР»РёС‚СЊ СЃСЂРµРґРЅРёР№ СЂРѕСЃС‚ РјР°Р»СЊС‡РёРєРѕРІ Рё РґРµРІРѕС‡РµРє РІ РѕРґРЅРѕРј РєР»Р°СЃСЃРµ.
+Р’ РєР»Р°СЃСЃРµ СѓС‡РёС‚СЃСЏ N С‡РµР»РѕРІРµРє
 */
 import java.util.Scanner;
 class Slogn01 {
@@ -11,24 +11,24 @@ class Slogn01 {
         double sumRostBoy = 0;
         double sumRostGirl = 0;
         Scanner scn = new Scanner(System.in);
-        System.out.print("Количество человек в классе = ");
+        System.out.print("РљРѕР»РёС‡РµСЃС‚РІРѕ С‡РµР»РѕРІРµРє РІ РєР»Р°СЃСЃРµ = ");
         n = scn.nextInt();
-        System.out.print("Количество мальчиков = ");
+        System.out.print("РљРѕР»РёС‡РµСЃС‚РІРѕ РјР°Р»СЊС‡РёРєРѕРІ = ");
         nBoy = scn.nextInt();
         nGirl = n - nBoy;
-        System.out.println("Количество девочек = " + nGirl);
+        System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ РґРµРІРѕС‡РµРє = " + nGirl);
         for (int i = 0; i < n; i++) {
             if (i < nBoy) {
-                System.out.print("Введи рост " + (i + 1) + "-го ученика(мальчика): ");
+                System.out.print("Р’РІРµРґРё СЂРѕСЃС‚ " + (i + 1) + "-РіРѕ СѓС‡РµРЅРёРєР°(РјР°Р»СЊС‡РёРєР°): ");
                 sumRostBoy += scn.nextDouble();
             } else {
-                System.out.print("Введи рост " + (i + 1) + "-го ученика(девочки): ");
+                System.out.print("Р’РІРµРґРё СЂРѕСЃС‚ " + (i + 1) + "-РіРѕ СѓС‡РµРЅРёРєР°(РґРµРІРѕС‡РєРё): ");
                 sumRostGirl += scn.nextDouble();
             }
         }
         avgBoy = sumRostBoy / nBoy;
         avgGirl = sumRostGirl / nGirl;
-        System.out.printf("Мальчиков в группе - %d. Средний рост = %.2f \n", nBoy, avgBoy);
-        System.out.printf("Девочек в группе - %d. Средний рост = %.2f", nGirl, avgGirl);
+        System.out.printf("РњР°Р»СЊС‡РёРєРѕРІ РІ РіСЂСѓРїРїРµ - %d. РЎСЂРµРґРЅРёР№ СЂРѕСЃС‚ = %.2f \n", nBoy, avgBoy);
+        System.out.printf("Р”РµРІРѕС‡РµРє РІ РіСЂСѓРїРїРµ - %d. РЎСЂРµРґРЅРёР№ СЂРѕСЃС‚ = %.2f", nGirl, avgGirl);
     }
 }
