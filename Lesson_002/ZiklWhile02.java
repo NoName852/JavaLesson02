@@ -1,6 +1,6 @@
-/*
-С клавиатуры вводятся числа до тех пор,
-пока не введено четное число. Найти сумму чисел.
+п»ї/*
+РЎ РєР»Р°РІРёР°С‚СѓСЂС‹ РІРІРѕРґСЏС‚СЃСЏ С‡РёСЃР»Р° РґРѕ С‚РµС… РїРѕСЂ,
+РїРѕРєР° РЅРµ РІРІРµРґРµРЅРѕ С‡РµС‚РЅРѕРµ С‡РёСЃР»Рѕ. РќР°Р№С‚Рё СЃСѓРјРјСѓ С‡РёСЃРµР».
 */
 import java.util.Scanner;
 class ZiklWhile02 {
@@ -8,15 +8,15 @@ class ZiklWhile02 {
         double chislo;
         double sum = 0;
         Scanner scn = new Scanner(System.in);
-        System.out.print("Введи число: ");
+        System.out.print("Р’РІРµРґРё С‡РёСЃР»Рѕ: ");
         chislo = scn.nextDouble();        
         while (chislo % 2 != 0) {
             sum += chislo;
-            System.out.print("Введи число: ");
+            System.out.print("Р’РІРµРґРё С‡РёСЃР»Рѕ: ");
             chislo = scn.nextDouble();
         }
-        System.out.println("Введено четное число.");
-        System.out.println("Сумма нечетных = " + sum);
+        System.out.println("Р’РІРµРґРµРЅРѕ С‡РµС‚РЅРѕРµ С‡РёСЃР»Рѕ.");
+        System.out.println("РЎСѓРјРјР° РЅРµС‡РµС‚РЅС‹С… = " + sum);
 
     }
 }

@@ -1,21 +1,21 @@
-/*
-Рассчитать значение функции y = sqrt(|sin(x) + cos(x)|) 
-в интервале х от a до b с заданным шагом
+п»ї/*
+Р Р°СЃСЃС‡РёС‚Р°С‚СЊ Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё y = sqrt(|sin(x) + cos(x)|) 
+РІ РёРЅС‚РµСЂРІР°Р»Рµ С… РѕС‚ a РґРѕ b СЃ Р·Р°РґР°РЅРЅС‹Рј С€Р°РіРѕРј
 */
 import java.util.Scanner;
 class ZiklFor02 {
     public static void main(String[] args) {
         double x, y, a, b, step;
         Scanner scn = new Scanner(System.in);
-        System.out.print("Введи начало интервала: а = ");
+        System.out.print("Р’РІРµРґРё РЅР°С‡Р°Р»Рѕ РёРЅС‚РµСЂРІР°Р»Р°: Р° = ");
         a = scn.nextDouble();
-        System.out.print("Введи конец интервала: b = ");
+        System.out.print("Р’РІРµРґРё РєРѕРЅРµС† РёРЅС‚РµСЂРІР°Р»Р°: b = ");
         b = scn.nextDouble();
-        System.out.print("Шаг = ");
+        System.out.print("РЁР°Рі = ");
         step = scn.nextDouble();
         for (x = a; x < b; x += step) {
             y = Math.sqrt(Math.abs(Math.sin(x) + Math.cos(x)));
-            System.out.printf("При Х = %.2f значение Y = %.4f \n", x, y);
+            System.out.printf("РџСЂРё РҐ = %.2f Р·РЅР°С‡РµРЅРёРµ Y = %.4f \n", x, y);
         }
     }
 }
